@@ -1,0 +1,20 @@
+{
+  "name": "solara-tide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Solara Tide one-bedroom coastal villa: an interactive walkthrough of the actual SketchUp model.",
+  "scripts": {
+    "dev": "node tools/serve.mjs",
+    "check": "node --check app.js && node --test tests/*.test.mjs",
+    "build:model": "node tools/build-model.mjs"
+  },
+  "devDependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@gltf-transform/core": "4.2.1",
+    "@gltf-transform/extensions": "4.2.1",
+    "@gltf-transform/functions": "4.2.1",
+    "meshoptimizer": "0.24.0",
+    "three": "0.180.0"
+  }
+}
