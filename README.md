@@ -4,15 +4,15 @@ Three actual furnished SketchUp models in one shared explorer, with the navigati
 
 | Villa | Direct route | Room viewpoints | Levels | Model size |
 | --- | --- | --- | --- | --- |
-| One-bedroom | `?villa=one-bedroom` | 5 | Villa | 10.3 MB |
-| Two-bedroom | `?villa=two-bedroom` | 9 | Villa | 12.0 MB |
-| Family estate | `?villa=estate` | 17 | Ground, Main, Upper | 26.5 MB |
+| One-bedroom | `?villa=one-bedroom` | 5 | Villa | 11.0 MB |
+| Two-bedroom | `?villa=two-bedroom` | 9 | Villa | 12.5 MB |
+| Family estate | `?villa=estate` | 17 | Ground, Main, Upper | 27.9 MB |
 
 Only the selected villa loads. Changing villas reloads the page so the previous model can be released from graphics memory.
 
 ## Realism pass
 
-All villas use physically based materials with fabric sheen, timber clearcoat, honed stone, reflective glass and animated water normals. HDR lighting uses the same Poly Haven environment supplied with Shelter of Sky, with source credit in `assets/realism/credits.json`. The original Fjäll Group logo is used in the header and loading screen. The one-bedroom sofa was rebuilt with a recessed timber base, curved upholstered sections, separate soft seats and loose cushions within its original footprint. The two-bedroom and estate retain their detailed curved furniture.
+All villas use physically based materials with fabric sheen, timber clearcoat, honed stone, reflective glass and animated water normals. HDR lighting uses the same Poly Haven environment supplied with Shelter of Sky, with source credit in `assets/realism/credits.json`. The original Fjäll Group logo is used in the header and loading screen. The one-bedroom sofa was rebuilt with a recessed timber base, curved upholstered sections, separate soft seats and loose cushions within its original footprint. Across all three villas, seat, back and scatter cushions are sculpted within the original allocated volumes; bedding folds are relaxed without moving the beds. The two-bedroom timber boards are clipped to the curved bedroom floor envelope with a 30 mm allowance inside the glazing. Reports record zero timber vertices outside that envelope. The coastal scene includes complete almond foliage, varied grass, native understory, gentle terrain relief and sculpted stratified boulders.
 
 ## Shared interface
 
@@ -22,7 +22,7 @@ Settings include daylight, golden hour, dusk, interior lighting, roof visibility
 
 Desktop: drag to look in Walk through; WASD or arrow keys move; Shift moves faster. Orbit: drag to rotate, scroll or pinch to zoom. Phone: left thumb joystick moves; drag the scene to look. Room changes fade between viewpoints.
 
-The estate uses explicit room and level shortcuts between storeys. Automatic stair climbing and gravity are not simulated. Upper-storey movement stays within the model’s floor footprints. Collision geometry is a simplified browser navigation aid, not a construction or regulatory check. Source furniture placement is preserved; this viewer does not modify the native SKP.
+The estate uses explicit room and level shortcuts between storeys. Automatic stair climbing and gravity are not simulated. Upper-storey movement stays within the model’s floor footprints. Collision geometry is a simplified browser navigation aid, not a construction or regulatory check. Furniture placement is preserved while upholstery shapes are refined; these changes update the web derivatives and do not modify the native SKP.
 
 ## Run locally
 
