@@ -21,12 +21,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: unzip -q -o runtime-assets.zip
+      - run: node tools/prepare.mjs
       - run: npm run check
       - uses: actions/configure-pages@v5
       - run: |
           mkdir -p _site
-          cp index.html style.css app.js navigation.mjs _site/
+          cp index.html style.css app.js navigation.mjs models.mjs realism.mjs _site/
           cp -R assets vendor fonts _site/
           touch _site/.nojekyll
       - uses: actions/upload-pages-artifact@v3

@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Solara Tide one-bedroom coastal villa: an interactive walkthrough of the actual SketchUp model.",
+  "description": "Solara Tide collection: three original furnished villa models in a shared Fj\u00e4ll explorer",
   "scripts": {
     "dev": "node tools/serve.mjs",
-    "check": "node --check app.js && node --test tests/*.test.mjs",
-    "build:model": "node tools/build-model.mjs"
+    "check": "node --check app.js && node --check models.mjs && node --check realism.mjs && node --test tests/*.test.mjs",
+    "prepare:assets": "node tools/prepare.mjs"
   },
   "devDependencies": {
     "@fontsource/inter": "^5.3.0",
