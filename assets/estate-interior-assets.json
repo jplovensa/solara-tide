@@ -1,0 +1,31 @@
+{
+  "source": "Innerscene original model library",
+  "license": "CC0-1.0",
+  "application": "Solara Tide family estate main living room and kitchen",
+  "assets": [
+    {
+      "name": "Crescent curved boucl\u00e9 sofa",
+      "file": "crescent-sofa.glb",
+      "source": "https://www.innerscene.com/tools/library/3d-parts/crescent-curved-boucle-sofa-90c9ad84",
+      "download": "https://www.innerscene.com/api/library/crescent-curved-boucle-sofa-90c9ad84/download",
+      "sourceSHA256": "26ed3d10a3f7c5b2bc6c32f2a287b385efd3587edc8fc39c6d70db8432739aef",
+      "modifications": "Placed and scaled for the estate; web-compressed; additional tailored cushions on the sofa."
+    },
+    {
+      "name": "Plyform lounge chair",
+      "file": "plyform-chair.glb",
+      "source": "https://www.innerscene.com/tools/library/3d-parts/plyform-bent-plywood-lounge-chair-a227a417",
+      "download": "https://www.innerscene.com/api/library/plyform-bent-plywood-lounge-chair-a227a417/download",
+      "sourceSHA256": "ed272ff35e8fe84c664915976e46cfd5ed8589ec963eb4c9ce454630784d3e24",
+      "modifications": "Placed and scaled for the estate; web-compressed; additional tailored cushions on the sofa."
+    },
+    {
+      "name": "Reed counter stool",
+      "file": "reed-stool.glb",
+      "source": "https://www.innerscene.com/tools/library/3d-parts/reed-counter-stool-96a9c0d5",
+      "download": "https://www.innerscene.com/api/library/reed-counter-stool-96a9c0d5/download",
+      "sourceSHA256": "d1388f3bf0588c03f512923bf4fd38eff9f13ecf549d2fafda32111a3a5672d6",
+      "modifications": "Placed and scaled for the estate; web-compressed; additional tailored cushions on the sofa."
+    }
+  ]
+}

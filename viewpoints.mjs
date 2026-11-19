@@ -1,5 +1,6 @@
 /** Room-camera refinements in source metres; source furniture stays in place. */
 export function applyViewpoints(nav,variant){if(variant!=='estate')return nav;const edits={
+ 'kitchen':[[42.7,18.3,5.65],[40.1,20.7,4.85]],
  'great-room':[[38.2,13.4,5.65],[35.7,16.7,4.8]],
  'guest-2':[[11.0,16.7,5.65],[11.0,19.3,4.8]],
  'guest-3':[[20.2,4.5,2.05],[20.2,7.3,1.2]],

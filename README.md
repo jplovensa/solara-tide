@@ -6,7 +6,7 @@ Three actual furnished SketchUp models in one shared explorer, with the navigati
 | --- | --- | --- | --- | --- |
 | One-bedroom | `?villa=one-bedroom` | 5 | Villa | 11.0 MB |
 | Two-bedroom | `?villa=two-bedroom` | 9 | Villa | 12.5 MB |
-| Family estate | `?villa=estate` | 17 | Ground, Main, Upper | 27.9 MB |
+| Family estate | `?villa=estate` | 17 | Ground, Main, Upper | 35.2 MB |
 
 Only the selected villa loads. Changing villas reloads the page so the previous model can be released from graphics memory.
 
@@ -43,3 +43,9 @@ The three `*-assets.zip` archives contain runtime model files. `tools/prepare.mj
 The one-bedroom, two-bedroom and estate use their respective saved native coastal models, not a generic replacement building. Reports inside `assets/` record the source filename, hash, geometry counts and compressed size. Original villa geometry and material maps are retained, with landscape detail reduced for web playback. The web GLBs are derivatives; editable native SKP files remain outside this repository.
 
 Architecture and scene assets remain the property of their respective rights holders. Repository visibility does not grant a licence to redistribute them. This is an interactive architectural model viewer, not a photorealistic movie renderer.
+
+## Estate kitchen and living rebuild
+
+The main living room uses imported Innerscene CC0 Crescent, Plyform and Reed furniture models with embedded PBR materials. Source URLs and hashes are recorded in `assets/estate-interior-assets.json`. The original block island and pill-shaped storage have been replaced by separate fitted joinery, a thin capsule stone worktop with a genuine sink opening, undermount bowl, mixer, recessed plinth, drawers and seating overhang. Dining and coffee tables have separate thin tops and pedestal bases. Navigation colliders follow the replacement assets.
+
+To rebuild the estate derivative from the local native scene export: run `node tools/build-variants.mjs estate`, then `node tools/merge-estate-furniture.mjs`. The merge step expects the three downloaded source GLBs in `/tmp/solara-furniture-source`.

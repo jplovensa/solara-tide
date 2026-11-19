@@ -1,3 +1,4 @@
+import {rebuildEstateInterior} from './estate-interior-rebuild.mjs';
 import {upgradeFurniture} from './furniture-upgrade.mjs';
 import {clipFlooring} from './geometry-refinement.mjs';
 import {refineCoast} from './coastal-refinement.mjs';
@@ -14,7 +15,8 @@ const variant=process.argv[2]||'two-bedroom',cfg=configs[variant];
 const ROOT=path.resolve(import.meta.dirname,'..');
 const src=JSON.parse(fs.readFileSync(cfg.source));
 const site=cfg.site?JSON.parse(fs.readFileSync(cfg.site)):{objects:src.objects.filter(o=>o.tag==='Coastal setting')};
-const refinement={...upgradeFurniture(src,variant),flooring:variant==='two-bedroom'?clipFlooring(src):null,coast:refineCoast(src,site)};
+const interiorRebuild=variant==='estate'?rebuildEstateInterior(src):null;
+const refinement={interiorRebuild,...upgradeFurniture(src,variant),flooring:variant==='two-bedroom'?clipFlooring(src):null,coast:refineCoast(src,site)};
 const origin=cfg.origin;
 const toWorld=p=>[p[0]-origin[0],p[2],-(p[1]-origin[1])];
 const sub=(a,b)=>a.map((v,i)=>v-b[i]);
